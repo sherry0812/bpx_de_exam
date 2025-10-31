@@ -21,12 +21,13 @@ This project builds an ETL pipeline using FastAPI and SQLAlchemy, with three dat
 
 
 ## Workflow:
-- Upload file → /upload
+- Upload file
 - Bronze → Silver → Gold happens automatically
+- Tables saved in SQLite database
 
 ## Check Data in DBeaver
 You can explore the SQLite database visually using DBeaver:
 1. Open DBeaver → Click Database → New Connection → SQLite
-2. Browse and select your database file (e.g. uploads.db or whatever path you used)
+2. Browse and select your database file (uploads.db)
 3. Click Finish
 4. You can now view the file_uploads, bronze_data, silver_data, and gold_data tables.
